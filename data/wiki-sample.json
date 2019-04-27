@@ -1,0 +1,1002 @@
+{
+  "_id": "10000032-1",
+  "numCols": 4,
+  "numDataRows": 11,
+  "numHeaderRows": 1,
+  "numericColumns": [
+    1
+  ],
+  "order": 0.5359748259652406,
+  "pgId": 10000032,
+  "pgTitle": "Mid Antrim (Northern Ireland Parliament constituency)",
+  "sectionTitle": "Members of Parliament",
+  "tableCaption": "Members of Parliament",
+  "tableData": [
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1929",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1929\" shape=\"rect\">1929</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611706,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1929",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1929",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Crawford",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"2\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Crawford_(politician)\" shape=\"rect\">Robert Crawford</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": -1,
+              "language": "en",
+              "title": "Robert_Crawford_(politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Crawford",
+            "linkType": "INTERNAL_RED",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1933",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1933\" shape=\"rect\">1933</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611691,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1933",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1933",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Crawford",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"2\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Crawford_(politician)\" shape=\"rect\">Robert Crawford</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": -1,
+              "language": "en",
+              "title": "Robert_Crawford_(politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Crawford",
+            "linkType": "INTERNAL_RED",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1938",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1938\" shape=\"rect\">1938</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611684,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1938",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1938",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "John Patrick",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"2\"> <a href=\"http://www.wikipedia.org/wiki/John_Patrick_(politician)\" shape=\"rect\">John Patrick</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 12,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 27678607,
+              "language": "en",
+              "title": "John_Patrick_(politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "John Patrick",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1945",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1945\" shape=\"rect\">1945</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3548245,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1945",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1945",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "John Patrick",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"2\"> <a href=\"http://www.wikipedia.org/wiki/John_Patrick_(politician)\" shape=\"rect\">John Patrick</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 12,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 27678607,
+              "language": "en",
+              "title": "John_Patrick_(politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "John Patrick",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1949",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1949\" shape=\"rect\">1949</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611634,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1949",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1949",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Nichol Wilson",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Nichol_Wilson\" shape=\"rect\">Robert Nichol Wilson</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 20,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 25947347,
+              "language": "en",
+              "title": "Robert_Nichol_Wilson",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Nichol Wilson",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1953",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1953\" shape=\"rect\">1953</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611558,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1953",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1953",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Simpson",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"5\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Simpson_(UK_politician)\" shape=\"rect\">Robert Simpson</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 14,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 23466344,
+              "language": "en",
+              "title": "Robert_Simpson_(UK_politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Simpson",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1958",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1958\" shape=\"rect\">1958</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611544,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1958",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1958",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Simpson",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"5\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Simpson_(UK_politician)\" shape=\"rect\">Robert Simpson</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 14,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 23466344,
+              "language": "en",
+              "title": "Robert_Simpson_(UK_politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Simpson",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1962",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1962\" shape=\"rect\">1962</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3611431,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1962",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1962",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Simpson",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"5\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Simpson_(UK_politician)\" shape=\"rect\">Robert Simpson</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 14,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 23466344,
+              "language": "en",
+              "title": "Robert_Simpson_(UK_politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Simpson",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1965",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1965\" shape=\"rect\">1965</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3609643,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1965",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1965",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Simpson",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"5\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Simpson_(UK_politician)\" shape=\"rect\">Robert Simpson</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 14,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 23466344,
+              "language": "en",
+              "title": "Robert_Simpson_(UK_politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Simpson",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1969",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1969\" shape=\"rect\">1969</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 3387326,
+              "language": "en",
+              "title": "Northern_Ireland_general_election,_1969",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1969",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Robert Simpson",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"5\"> <a href=\"http://www.wikipedia.org/wiki/Robert_Simpson_(UK_politician)\" shape=\"rect\">Robert Simpson</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 14,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 23466344,
+              "language": "en",
+              "title": "Robert_Simpson_(UK_politician)",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Robert Simpson",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Ulster Unionist",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"10\"> <a href=\"http://www.wikipedia.org/wiki/Ulster_Unionist_Party\" shape=\"rect\">Ulster Unionist</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 15,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 70525,
+              "language": "en",
+              "title": "Ulster_Unionist_Party",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "Ulster Unionist",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ],
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "1973",
+        "tdHtmlString": "<td colspan=\"1\" rowspan=\"1\"> <a href=\"http://www.wikipedia.org/wiki/Northern_Ireland_Constitution_Act_1973\" shape=\"rect\">1973</a> </td>",
+        "surfaceLinks": [
+          {
+            "offset": 0,
+            "endOffset": 4,
+            "isInTemplate": false,
+            "locType": "MAIN_TABLE",
+            "target": {
+              "id": 4455110,
+              "language": "en",
+              "title": "Northern_Ireland_Constitution_Act_1973",
+              "redirecting": false,
+              "namesapce": 0
+            },
+            "surface": "1973",
+            "linkType": "INTERNAL",
+            "inTemplate": false
+          }
+        ],
+        "subtableID": -1,
+        "isNumeric": true
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Constituency abolished",
+        "tdHtmlString": "<td colspan=\"3\" rowspan=\"1\"> Constituency abolished </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Constituency abolished",
+        "tdHtmlString": "<td colspan=\"3\" rowspan=\"1\"> Constituency abolished </td>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ]
+  ],
+  "tableHeaders": [
+    [
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Election",
+        "tdHtmlString": "<th colspan=\"2\" rowspan=\"1\"> Election </th>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Election",
+        "tdHtmlString": "<th colspan=\"2\" rowspan=\"1\"> Election </th>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Member",
+        "tdHtmlString": "<th colspan=\"1\" rowspan=\"1\"> Member </th>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      },
+      {
+        "cellID": -1,
+        "textTokens": [],
+        "text": "Party",
+        "tdHtmlString": "<th colspan=\"1\" rowspan=\"1\"> Party </th>",
+        "surfaceLinks": [],
+        "subtableID": -1,
+        "isNumeric": false
+      }
+    ]
+  ],
+  "tableId": 1
+}
