@@ -43,6 +43,8 @@ class WikiTablesReader:
 
 if __name__ == '__main__':
     wtr = WikiTablesReader()
-    wtr.load_tables(5000)
-    pprint(wtr.get(55))
-    pprint(wtr.query_int('numHeaderRows', 5))
+    wtr.load_tables(50000)
+    # pprint(wtr.get(55))
+    tables_found = wtr.query_string('_id', '10000032')
+    pprint(tables_found)
+    print(len(tables_found))
