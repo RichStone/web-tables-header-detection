@@ -21,7 +21,7 @@ class WikiTablesReader:
     def get(self, ordinal):
         return self.tables[ordinal]
 
-    def query(self, key, search_value):
+    def query_string(self, key, search_value):
         """Search for a certain String value in the top level keys."""
         results = []
         for table in self.tables:
@@ -31,9 +31,18 @@ class WikiTablesReader:
                     results.append(table)
         return results
 
+    def query_int(self, key, search_value):
+        """Search for a certain int value in the top level keys."""
+        results = []
+        for table in self.tables:
+            if table[key]:
+                if search_value == table[key]:
+                    results.append(table)
+        return results
+
 
 if __name__ == '__main__':
     wtr = WikiTablesReader()
-    wtr.load_tables(500)
+    wtr.load_tables(5000)
     pprint(wtr.get(55))
-    pprint(wtr.query('_id', '10002087'))
+    pprint(wtr.query_int('numHeaderRows', 5))
