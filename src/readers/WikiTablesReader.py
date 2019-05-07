@@ -42,41 +42,39 @@ class WikiTablesReader:
                     results.append(table)
         return results
 
-    def displayTable(self, ordinal):
+    def interestingHeader(self, ordinal):
         jsonTable = self.get(ordinal)
-        cellColors = []
-        textTable = []
 
         headerRows = jsonTable['tableHeaders']
         dataRows = jsonTable['tableData']
-        for row in (headerRows + dataRows):
-            rowColors = []
-            textRow = []
+
+        if len(headerRows) > 1:
+            return True
+        for row in dataRows:
             for cell in row:
-                text = cell['text']
-                if "Error: " in text:
-                    text = "Error: ..."
-                textRow.append(text)
                 html = cell['tdHtmlString']
-                if "<th " not in html:
-                    rowColors.append('#EDFAFF')
-                else:
-                    rowColors.append('#a1c3d1')
-            cellColors.append(rowColors)
-            textTable.append(textRow)
-        
-        plotTable = plotly.graph_objs.Table(
-            cells=dict(values=textTable,
-                line = dict(color='#7D7F80'),
-                fill = dict(color=cellColors))
-        )
-        data = [plotTable] 
-        plotly.plotly.iplot(data, filename = 'header_highlighted')
-        print("plotted table")
+                if "<th " in html:
+                    return True
+        return False
 
 if __name__ == '__main__':
     wtr = WikiTablesReader()
-    wtr.load_tables(60)
-    pprint(wtr.get(10))
-    pprint(wtr.query_int('numHeaderRows', 5))
-    wtr.displayTable(10)
+    maxTable = 50000
+    wtr.load_tables(maxTable)
+
+    interesting = 0
+    notInteresting = 0
+
+    for i in range(0, maxTable):
+        if wtr.interestingHeader(i):
+            interesting += 1
+            print("interesting")
+        else:
+            notInteresting += 1
+            print("not interesting")
+
+    interestingPercent = 100 * interesting/maxTable
+    print( " ")
+    print("Percent of interesting Tables:")
+    print(interestingPercent)
+    
