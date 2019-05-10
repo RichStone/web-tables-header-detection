@@ -1,0 +1,59 @@
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  background-color: #eeeeee;
+}
+</style>
+</head>
+
+Normalized HTML
+<table style="width:50%">
+  <tr>
+    <th colspan="2" rowspan="1"> Election </th>
+    <th colspan="2" rowspan="1"> Election </th>
+    <th colspan="1" rowspan="1"> Member </th>
+    <th colspan="1" rowspan="1"> Party </th>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="10"> </td>
+    <td colspan="1" rowspan="1"> <a href="http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1929" shape="rect">1929</a> </td>
+    <td colspan="1" rowspan="2"> <a href="http://www.wikipedia.org/wiki/Robert_Crawford_(politician)" shape="rect">Robert Crawford</a> </td>
+    <td colspan="1" rowspan="10"> <a href="http://www.wikipedia.org/wiki/Ulster_Unionist_Party" shape="rect">Ulster Unionist</a> </td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="10"> </td>
+    <td colspan="1" rowspan="1"> <a href="http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1933" shape="rect">1933</a> </td>
+    <td colspan="1" rowspan="2"> <a href="http://www.wikipedia.org/wiki/Robert_Crawford_(politician)" shape="rect">Robert Crawford</a> </td>
+    <td colspan="1" rowspan="10"> <a href="http://www.wikipedia.org/wiki/Ulster_Unionist_Party" shape="rect">Ulster Unionist</a> </td>
+  </tr>
+</table>
+
+<br>
+<br>
+
+Needed HTML
+<table style="width:50%">
+  <tr>
+    <th colspan="2" rowspan="1"> Election </th>
+    <th colspan="1" rowspan="1"> Member </th>
+    <th colspan="1" rowspan="1"> Party </th>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="10"> </td>
+    <td colspan="1" rowspan="1"> <a href="http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1929" shape="rect">1929</a> </td>
+    <td colspan="1" rowspan="2"> <a href="http://www.wikipedia.org/wiki/Robert_Crawford_(politician)" shape="rect">Robert Crawford</a> </td>
+    <td colspan="1" rowspan="10"> <a href="http://www.wikipedia.org/wiki/Ulster_Unionist_Party" shape="rect">Ulster Unionist</a> </td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="1"> <a href="http://www.wikipedia.org/wiki/Northern_Ireland_general_election,_1933" shape="rect">1933</a> </td>
+  </tr>
+</table>
+
+<br>
+<br>
+
+<button style="background-color: #ddffda;" type="button" >Headers correct</button>
+<button style="background-color: #cbacdf" type="button" >Headers wrong</button>
