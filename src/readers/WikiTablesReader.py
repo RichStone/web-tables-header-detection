@@ -2,8 +2,10 @@ import os
 import itertools
 import json
 import plotly
+import re
 from pprint import pprint
 from definitions import PROJECT_ROOT_DIR
+import requests
 
 
 class WikiTablesReader:
@@ -42,41 +44,66 @@ class WikiTablesReader:
                     results.append(table)
         return results
 
-    def displayTable(self, ordinal):
+    def interestingHeader(self, ordinal):
         jsonTable = self.get(ordinal)
-        cellColors = []
-        textTable = []
+        print(jsonTable['pgId'])
 
         headerRows = jsonTable['tableHeaders']
         dataRows = jsonTable['tableData']
-        for row in (headerRows + dataRows):
-            rowColors = []
-            textRow = []
+
+        #if len(headerRows) > 1:
+        #    return True
+        for row in dataRows + headerRows:
             for cell in row:
-                text = cell['text']
-                if "Error: " in text:
-                    text = "Error: ..."
-                textRow.append(text)
                 html = cell['tdHtmlString']
-                if "<th " not in html:
-                    rowColors.append('#EDFAFF')
-                else:
-                    rowColors.append('#a1c3d1')
-            cellColors.append(rowColors)
-            textTable.append(textRow)
-        
-        plotTable = plotly.graph_objs.Table(
-            cells=dict(values=textTable,
-                line = dict(color='#7D7F80'),
-                fill = dict(color=cellColors))
-        )
-        data = [plotTable] 
-        plotly.plotly.iplot(data, filename = 'header_highlighted')
-        print("plotted table")
+                if '' in html:
+                    print(html)
+                    print(jsonTable['pgId'])
+                    print(ordinal)
+                    print(" ")
+                    #return True
+        return False
+
+def getInterestingTables(wtr):
+    interesting = 0
+    notInteresting = 0
+
+    for i in range(0, maxTable):
+        if wtr.interestingHeader(i):
+            interesting += 1
+            #print("interesting")
+        else:
+            notInteresting += 1
+            #print("not interesting")
+
+    interestingPercent = 100 * interesting/maxTable
+    print( " ")
+    print("Percent of interesting Tables:")
+    print(interestingPercent)
+    
+def getPureHtml(wtr):
+    for i in range(0, 20):
+        table = wtr.get(i)
+        pgId = table['pgId']
+        print(pgId)
+        url = 'https://en.wikipedia.org/?curid=' + str(pgId)
+        response = requests.get(url)
+        splits = response.text.split('<table class="wikitable')
+        if len(splits) != 2:
+            print("there are the wrong number of tables on this page: " + str(len(splits) -1))
+            continue
+        htmlTable = splits[1].split('</table>')[0]
+        if '<table' in htmlTable:
+            print('there was a subtable we cannot deal with')
+        else:
+            print(htmlTable)
 
 if __name__ == '__main__':
     wtr = WikiTablesReader()
-    wtr.load_tables(60)
-    pprint(wtr.get(10))
-    pprint(wtr.query_int('numHeaderRows', 5))
-    wtr.displayTable(10)
+    maxTable = 10000
+    wtr.load_tables(maxTable)
+
+    pprint(wtr.get(15))
+    pprint(wtr.get(9824))
+    
+    
