@@ -1,2 +1,5 @@
 Notebooks/data
-Notebooks/ø.ipynb_checkpoints
+Notebooks/*.ipynb_checkpoints
+Labeling Tool/.idea
+Labeling Tool/node_modules
+*.iml
