@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/materialize.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/materialize.min.js')
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/axios.min.js')
+    block head
+    if initialState
+      each object, key in initialState
+        script.
+          window.!{key} = !{JSON.stringify(object)};
+  body
+    block content
