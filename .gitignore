@@ -1,5 +1,6 @@
-Notebooks/data
-Notebooks/*.ipynb_checkpoints
+Notebooks/data/
+Notebooks/.ipynb_checkpoints/
 Labeling Tool/.idea
 Labeling Tool/node_modules
 *.iml
+.DS_Store
