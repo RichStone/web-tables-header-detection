@@ -1,0 +1,16 @@
+.annotationTable th > a.btn-small {
+    width: 90px;
+}
+.annotationTable tr[data-label='Header'] {
+    background-color: #e1f5fe !important;
+}
+.annotationTable tr[data-label='Data'] {
+    background-color: #f9fbe7 !important;
+}
+.annotationTable tr[data-label='Other'] {
+    background-color: #fff3e0 !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
