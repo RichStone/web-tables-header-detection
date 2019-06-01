@@ -1,6 +1,8 @@
 import express from 'express';
 import createError from 'http-errors';
+import { ObjectId } from "mongodb";
 import { connectToDB } from '../helpers/mongo';
+import { prepareTable } from "../helpers/tableUtil";
 
 const router = express.Router();
 
@@ -9,7 +11,7 @@ router.get('/next', (req, res) =>
         .then(({ client, tables }) =>
             tables
                 .find({
-                    annotation : {
+                    annotatedAt : {
                         $exists : false,
                     },
                     skipped: {
@@ -27,7 +29,7 @@ router.get('/:tableID', (req, res, next) =>
         .then(({ client, tables }) =>
             tables
                 .find({
-                    _id: req.params.tableID
+                    _id: ObjectId(req.params.tableID)
                 })
                 .limit(1)
                 .next()
@@ -36,13 +38,12 @@ router.get('/:tableID', (req, res, next) =>
             table ?
                 res.render('annotateTable', prepareTable(table))
                 :
-                next(createError(404, `Table with id ${req.params.tableID} does not exists`)))
+                next(createError(404, `Table with id ${req.params.tableID} does not exist`)))
 );
 
 router.post('/:tableID', (req, res) => {
-    const header = req.body.headerAnnotations;
-    const data = req.body.dataAnnotations;
-    if (!header || !data) {
+    const annotations = req.body.annotations;
+    if (!annotations) {
         res.send(422);
     } else {
         connectToDB()
@@ -50,15 +51,13 @@ router.post('/:tableID', (req, res) => {
                 tables
                     .update(
                         {
-                            _id: req.params.tableID
+                            _id: ObjectId(req.params.tableID)
                         },
                         {
                             $set:
                                 {
-                                    annotation: {
-                                        header: req.body.headerAnnotations,
-                                        data: req.body.dataAnnotations
-                                    },
+                                    annotations,
+                                    annotatedAt: new Date().getTime()
                                 }
                         }
                     )
@@ -73,7 +72,7 @@ router.post('/:tableID/skip', (req, res) =>
             tables
                 .update(
                     {
-                        _id: req.params.tableID
+                        _id: ObjectId(req.params.tableID)
                     },
                     {
                         $set:
@@ -85,49 +84,5 @@ router.post('/:tableID/skip', (req, res) =>
                 .finally(() => client.close())
         ).then(() => res.send(200))
 );
-
-const prepareTable = table => {
-    const headerRows = table.tableHeaders;
-    const dataRows = table.tableData;
-    normalizeColRowSpans(headerRows);
-    normalizeColRowSpans(dataRows);
-    const labelControls = [
-        {
-            label: 'Header',
-            color: 'light-blue'
-        }, {
-            label: 'Data',
-            color: 'lime'
-        }, {
-            label: 'Other',
-            color: 'orange'
-        }
-    ];
-    const headerAnnotations = new Array(headerRows.length).fill('Header');
-    const dataAnnotations = new Array(dataRows.length).fill('Data');
-
-    return {
-        title: table.pgTitle,
-        tableSource: `https://en.wikipedia.org/?curid=${table.pgId}`,
-        headerRows,
-        dataRows,
-        labelControls,
-        headerAnnotations,
-        dataAnnotations,
-        initialState: {
-            headerAnnotations,
-            dataAnnotations,
-            id: table._id,
-        }
-    }
-};
-
-const normalizeColRowSpans = rows =>
-    rows.forEach(row =>
-        row.forEach(cell => {
-            cell.tdHtmlString = cell.tdHtmlString.replace(/colspan=(["'])\d+(["'])/, 'colspan="1"');
-            cell.tdHtmlString = cell.tdHtmlString.replace(/rowspan=(["'])\d+(["'])/, 'colspan="1"');
-        })
-    );
 
 export default router;

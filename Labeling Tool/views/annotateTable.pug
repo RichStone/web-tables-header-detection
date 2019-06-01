@@ -1,31 +1,20 @@
 extends layout
 
-mixin labelControl(isHeader, rowIndex)
-    each labelControl in labelControls
-        th
-            a(
-                class=`labelButton waves-effect waves-light btn-small ${labelControl.color}`,
-                onClick=`annotate(${JSON.stringify(isHeader)}, ${JSON.stringify(rowIndex)}, ${JSON.stringify(labelControl.label)});`
-            ) #{labelControl.label}
-
 block head
+    link(rel='stylesheet', href='/stylesheets/wikipedia.css')
     script.
-        const annotate = (isHeaderJson, rowIndexJson, annotation) => {
-            const isHeader = JSON.parse(isHeaderJson);
-            const rowIndex = JSON.parse(rowIndexJson);
-            const annotations = isHeader ? window.headerAnnotations : window.dataAnnotations;
-            annotations[rowIndex] = annotation;
+        const annotate = (rowIndex, annotation) => {
+            window.annotations[rowIndex] = annotation;
             $('.saveButton').toggleClass('disabled', false);
-            $(`tr${isHeader ? '[data-is-header]' : ':not([data-is-header])'}[data-row-index='${rowIndex}']`).attr('data-label', annotation);
+            $(`tr[data-row-index='${rowIndex}']`).attr('data-label', annotation);
         }
 
         const save = () =>
             axios
                 .post(
-                    `http://localhost:3000/table/${window.id}`,
+                    '#{saveTable}',
                     {
-                        headerAnnotations: window.headerAnnotations,
-                        dataAnnotations: window.dataAnnotations
+                        annotations: window.annotations
                     }
                 )
                 .then(() => $('.saveButton').toggleClass('disabled', true))
@@ -34,23 +23,24 @@ block head
                     throw error;
                 });
 
-        const next = () => window.location.replace('http://localhost:3000/table/next');
+        const next = () => window.location.replace('#{nextTable}');
 
         const saveAndNext = () =>
             save().then(next);
 
         const skip = () =>
             axios
-                .post(`http://localhost:3000/table/${window.id}/skip`)
+                .post('#{skipTable}')
                 .then(next)
                 .catch(error => {
                     M.toast({html: error});
                     throw error;
                 });
 
+
 block content
-    h1(class='center') #{title}
     div(class='container')
+        h1(class='center') #{title}
         div(class='row')
             div(class='col s2')
                 a(class='pointer', onClick='skip()') Skip
@@ -58,26 +48,7 @@ block content
                 a(href=tableSource, target='_blank', class='right') Show Source
         div(class='row')
             div(class='col s12')
-                table(class='annotationTable')
-                    thead
-                        each row, rowIndex in headerRows
-                            tr(
-                                data-is-header=true,
-                                data-label=headerAnnotations[rowIndex],
-                                data-row-index=rowIndex
-                            )
-                                +labelControl(true, rowIndex)
-                                each cell in row
-                                    | !{cell.tdHtmlString}
-                    tbody
-                        each row, rowIndex in dataRows
-                            tr(
-                                data-label=dataAnnotations[rowIndex],
-                                data-row-index=rowIndex
-                            )
-                                +labelControl(false, rowIndex)
-                                each cell in row
-                                    | !{cell.tdHtmlString}
+                | !{html}
         div(class='row')
             div(class='col s2 offset-s5 center')
                 a(

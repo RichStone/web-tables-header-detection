@@ -1,16 +1,32 @@
-.annotationTable th > a.btn-small {
+table th > a.btn-small {
     width: 90px;
 }
-.annotationTable tr[data-label='Header'] {
+table tr[data-label='Header'] th:first-of-type {
     background-color: #e1f5fe !important;
 }
-.annotationTable tr[data-label='Data'] {
+table tr[data-label='Data'] th:first-of-type {
     background-color: #f9fbe7 !important;
 }
-.annotationTable tr[data-label='Other'] {
+table tr[data-label='Other'] th:first-of-type {
     background-color: #fff3e0 !important;
 }
 
+table tr[data-label] {
+    height: 100%;
+}
+
+table th:nth-of-type(1) {
+    min-width: 350px;
+}
+
 .pointer {
-    cursor: pointer;
+    cursor: pointer !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.space-evenly {
+    justify-content: space-evenly !important;
 }

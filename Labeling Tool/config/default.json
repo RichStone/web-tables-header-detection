@@ -3,7 +3,9 @@
     "url": "mongodb://localhost:27017",
     "db": "bob",
     "collections": {
-      "tables": "tables"
+      "tables": "tables",
+      "pages": "pages"
     }
-  }
+  },
+  "baseurl": "http://localhost:3000/"
 }
