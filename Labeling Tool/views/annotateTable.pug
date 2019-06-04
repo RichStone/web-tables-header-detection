@@ -1,0 +1,62 @@
+extends layout
+
+block head
+    link(rel='stylesheet', href='/stylesheets/wikipedia.css')
+    script.
+        const annotate = (rowIndex, annotation) => {
+            window.annotations[rowIndex] = annotation;
+            $('.saveButton').toggleClass('disabled', false);
+            $(`tr[data-row-index='${rowIndex}']`).attr('data-label', annotation);
+        }
+
+        const save = () =>
+            axios
+                .post(
+                    '#{saveTable}',
+                    {
+                        annotations: window.annotations
+                    }
+                )
+                .then(() => $('.saveButton').toggleClass('disabled', true))
+                .catch(error => {
+                    M.toast({html: error});
+                    throw error;
+                });
+
+        const next = () => window.location.replace('#{nextTable}');
+
+        const saveAndNext = () =>
+            save().then(next);
+
+        const skip = () =>
+            axios
+                .post('#{skipTable}')
+                .then(next)
+                .catch(error => {
+                    M.toast({html: error});
+                    throw error;
+                });
+
+
+block content
+    div(class='container')
+        h1(class='center') #{title}
+        div(class='row')
+            div(class='col s2')
+                a(class='pointer', onClick='skip()') Skip
+            div(class='col s2 offset-s8')
+                a(href=tableSource, target='_blank', class='right') Show Source
+        div(class='row')
+            div(class='col s12')
+                | !{html}
+        div(class='row')
+            div(class='col s2 offset-s5 center')
+                a(
+                    class='saveButton waves-effect waves-light btn-small white blue-text capitalized',
+                    onClick='save()'
+                ) Save
+            div(class='col s2 offset-s3')
+                a(
+                    class='waves-effect waves-light btn-small white blue-text capitalized right',
+                    onClick='saveAndNext()'
+                ) Save & Next
