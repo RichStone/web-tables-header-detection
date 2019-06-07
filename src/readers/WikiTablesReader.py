@@ -9,9 +9,9 @@ import requests
 
 
 class WikiTablesReader:
-    def __init__(self):
+    def __init__(self, fileName):
         #self.wiki_tables_json = os.environ['WIKI_TABLES_JSON_DUMP']
-        self.wiki_tables_json = os.path.join(PROJECT_ROOT_DIR, '../data/tables.json')
+        self.wiki_tables_json = os.path.join(PROJECT_ROOT_DIR, fileName)
         self.output_dir = os.path.join(PROJECT_ROOT_DIR, 'data')
         self.tables = []
 
@@ -24,6 +24,9 @@ class WikiTablesReader:
 
     def get(self, ordinal):
         return self.tables[ordinal]
+
+    def size(self):
+        return len(self.tables)
 
     def query_string(self, key, search_value):
         """Search for a certain String value in the top level keys."""
@@ -98,12 +101,69 @@ def getPureHtml(wtr):
         else:
             print(htmlTable)
 
-if __name__ == '__main__':
-    wtr = WikiTablesReader()
-    maxTable = 10000
-    wtr.load_tables(maxTable)
 
-    pprint(wtr.get(15))
-    pprint(wtr.get(9824))
+
+
+if __name__ == '__main__':
+    newTables = WikiTablesReader('../data/new/tables.json')
+    oldTables = WikiTablesReader('../data/tables.json')
     
-    
+    maxTable = 5810
+    newTables.load_tables(maxTable)
+    oldTables.load_tables(maxTable)
+
+    oldBold = 0
+    newBold = 0
+
+    oldItalic = 0
+    newItalic = 0
+
+    oldCentered = 0
+    newCentered = 0
+
+    oldCells = 0
+    newCells = 0
+
+    for i in range(0, maxTable):
+        newTable = newTables.get(i)
+        for cell in newTable['features']:
+            newCells += 1
+            if cell['isBold']: 
+                newBold += 1
+            if cell['isItalic']:
+                newItalic += 1
+            if cell['isCenterAligned']:
+                newCentered += 1
+
+        oldTable = oldTables.get(i)
+        headerRows = oldTable['tableHeaders']
+        dataRows = oldTable['tableData']
+        for row in dataRows + headerRows:
+            for cell in row:
+                oldCells += 1
+                html = cell['tdHtmlString']
+                if re.search('((font-weight ?: ?bold)|(font ?: ?bold))', html):
+                    oldBold += 1
+                if re.search('(font-style ?: ?italic)', html):
+                    oldItalic += 1
+    print("Number of bold tags in old tables: ")
+    print(oldBold)
+    print("Number of bold tags in new tables: ")
+    print(newBold)
+    print("Number of bold tags in old tables: ")
+    print(oldItalic)
+    print("Number of italic tags in new tables: ")
+    print(newItalic)
+    print("number of cells in old tables:")
+    print(oldCells)
+    print("number of cells in new tables:")
+    print(newCells)
+
+    print("number of bold tags per cell in old tables:")
+    print(oldBold/oldCells)
+    print("number of bold tags per cell in new tables:")
+    print(newBold/newCells)
+    print("number of italic tags per cell in old tables:")
+    print(oldItalic/oldCells)
+    print("number of italic tags per cell in new tables:")
+    print(newItalic/newCells)
