@@ -4,3 +4,4 @@ Labeling Tool/.idea
 Labeling Tool/node_modules
 *.iml
 .DS_Store
+data/tables.json
