@@ -1,17 +1,17 @@
 import express from 'express';
 import createError from 'http-errors';
 import config from "config";
+import { ObjectId } from "mongodb";
 import { connectToDB } from '../helpers/mongo';
 
 const router = express.Router();
 
-router.get('/:pageID', (req, res, next) =>
-    connectToDB()
-        .then(({ client, db }) =>
+router.get('/:pageID', (req, res, next) => {
+    const find = config.get('pgIdIsNumber') ? { pgId: Number(req.params.pageID) } : { pgId: ObjectId(req.params.pageID) };
+    return connectToDB()
+        .then(({client, db}) =>
             db.collection(config.get('mongodb.collections.pages'))
-                .find({
-                    pgId: Number(req.params.pageID)
-                })
+                .find(find)
                 .limit(1)
                 .next()
                 .catch(console.error)
@@ -21,7 +21,7 @@ router.get('/:pageID', (req, res, next) =>
             page ?
                 res.send(page.HTML.replace('collapsed', ''))
                 :
-                next(createError(404, `Page with id ${req.params.pageID} does not exist`)))
-);
+                next(createError(404, `Page with id ${req.params.pageID} does not exist`)));
+});
 
 export default router;

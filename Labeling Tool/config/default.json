@@ -3,9 +3,10 @@
     "url": "mongodb://localhost:27017",
     "db": "bob",
     "collections": {
-      "tables": "tables",
-      "pages": "pages"
+      "tables": "wtcLabelTables1",
+      "pages": "wtcPages"
     }
   },
-  "baseurl": "http://localhost:3000/"
+  "baseurl": "http://localhost:3000/",
+  "pgIdIsNumber": false
 }
