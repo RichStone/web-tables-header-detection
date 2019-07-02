@@ -3,7 +3,7 @@
     "url": "mongodb://localhost:27017",
     "db": "bob",
     "collections": {
-      "tables": "wtcLabelTables1",
+      "tables": "wtcLabelTables2",
       "pages": "wtcPages"
     }
   },
